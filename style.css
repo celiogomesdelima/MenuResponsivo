@@ -9,19 +9,35 @@ body, html{
 }
 header{
     background-color: grey;
+    padding: 10px;
+    
 }
 header h1{
-    padding: 10px;
     text-align: center;
 }
-menu{
+span#burger{
+    background-color: rgb(48, 48, 48);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burger:hover{
+background-color: white;
+color: black;
+}
+menu{
+    display: none;
+    margin-top: 20px;
+    position: relative;
 }
 menu > ul {
     list-style-type:none;
 }
+
 menu > ul> li> a{
-    display:block;
+    display: block;
     padding: 10px;
     text-decoration: none;
     text-align: center;
